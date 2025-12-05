@@ -41,11 +41,21 @@ A conversational AI tutor that provides detailed explanations and guided learnin
 - Adaptive explanations based on student responses
 
 ## Technical Architecture
+
+![Screenshot of Architecture](media/carindesign.png)
+
 The following architectural overview illustrates the interaction between the frontend, the n8n workflow engine, the agentic reasoning layer, and the AI model. It provides a high-level representation of how user inputs travel through orchestrated decision pathways before being transformed into structured educational feedback.
 
 ### Frontend
 - **Interface**: Clean, responsive web interface optimized for learning
+
+![Screenshot of Tutor](media/tutor1.png)
+![Screenshot of Tutor](media/tutor2.png)
+
 - **Design Philosophy**: Duolingo-inspired minimalist UI for reduced cognitive load
+
+![Screenshot of QnA](media/qna.png)
+  
 - **Accessibility**: Clear visual hierarchy and intuitive navigation
 
 ### Backend Integration
