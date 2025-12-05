@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QnA Agent</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+<h1>QnA Agent</h1>
+<nav>
+<a href="index.html">QnA Page</a>
+<a href="tutor.html">Tutor Page</a>
+</nav>
+</header>
+
+<main>
+
+<div id="chatSection">
+    <h2>Ask your question</h2>
+
+    <!-- Chat messages -->
+    <div id="chatMessages" class="chat-messages"></div>
+
+    <!-- Input area connected to qna.js -->
+    <div class="chat-input-container">
+        <input type="text" id="chatInput" placeholder="Type your question...">
+        <button id="sendBtn">Send</button>
+    </div>
+</div>
+
+</main>
+
+<!-- Link to your QnA logic -->
+<script src="qna.js"></script>
+
+</body>
+</html>

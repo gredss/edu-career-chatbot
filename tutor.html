@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tutor Agent</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Tutor Agent</h1>
+    <nav>
+        <a href="index.html">QnA Page</a>
+        <a href="tutor.html">Tutor Page</a>
+    </nav>
+</header>
+
+<main>
+    <div id="tutorSection">
+        <h2>Ask Your Tutor</h2>
+
+        <!-- Chat messages -->
+        <div id="tutorOutput" class="chat-messages"></div>
+
+        <!-- Input area -->
+        <div class="chat-input-container">
+            <input type="text" id="tutorInput" placeholder="Ask about Math, Physics, or Languages...">
+            <button id="teachBtn">Send</button>
+        </div>
+    </div>
+</main>
+
+<!-- JS -->
+<script src="tutor.js"></script>
+
+</body>
+</html>
