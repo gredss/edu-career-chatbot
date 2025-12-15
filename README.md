@@ -1,4 +1,4 @@
-# AI-Powered Learning Platform
+# CARIN an AI-Powered Learning Platform
 
 An interactive educational platform that combines AI-driven tutoring and adaptive quiz systems to enhance student learning outcomes across multiple subjects.
 
