@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARIN - Chat dengan AI Tutor</title>
+    <link rel="stylesheet" href="../css/chat.css"> 
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <span class="icon">🎓</span>
+            <span>CARIN</span>
+        </div>
+        <ul class="navbar-menu" id="navbarMenu">
+            <li><a href="dashboard.html">Beranda</a></li>
+            <li><a href="#" class="active">Mulai Belajar</a></li>
+            <li><a href="dashboard.html#featuresSection">Fitur</a></li>
+        </ul>
+        <div class="mobile-toggle" id="mobileToggle">☰</div>
+    </nav>
+
+    <section class="chat-section active" id="chatSection">
+        <div class="chat-container">
+            <div class="chat-header">
+                <div class="avatar">🤖</div>
+                <div class="info">
+                    <h3>CARIN (Rin Tohsaka Mode)</h3>
+                    <p>Siap membantu belajarmu</p>
+                </div>
+            </div>
+            
+            <div class="chat-messages" id="chatMessages">
+                
+                <div class="message ai">
+                    <div class="message-bubble">
+                        <p>Halo! Saya AI Tutor CARIN. 👋</p>
+                        <p>Selamat datang! Saya siap membantumu merencanakan langkah selanjutnya.</p>
+                        <p>Untuk memulai, <b>beri saya fokus utama rencanamu saat ini.</b></p>
+                        <p>Pilih kategori dan sebutkan <b>Topik atau Pertanyaan spesifik</b> yang kamu miliki:</p>
+                        
+                        <ul>
+                            <li>🎓 <b>Pilihan Kuliah</b>: <i>Contoh: Persiapan UTBK/SNBT, Memilih Jurusan.</i></li>
+                            <li>💼 <b>Pilihan Kerja</b>: <i>Contoh: Membuat CV/Portofolio, Wawancara Kerja.</i></li>
+                            <li>🧭 <b>Gap Year/Lainnya</b>: <i>Contoh: Pengembangan Diri, Magang.</i></li>
+                        </ul>
+                        
+                        <p>Apa pertanyaan terbesarmu saat ini?</p>
+                        
+                        <div class="suggestions">
+                            <button class="suggestion-btn" data-suggestion="Saya bingung memilih jurusan kuliah yang sesuai minat, bisa bantu?">🎓 Pilih Jurusan</button>
+                            <button class="suggestion-btn" data-suggestion="Apa saja skill yang paling dicari perusahaan untuk lulusan SMA?">💼 Skill Kerja</button>
+                            <button class="suggestion-btn" data-suggestion="Apa kegiatan produktif saat gap year?">🧭 Rencana Gap Year</button>
+                            <button class="suggestion-btn" data-suggestion="Buatkan strategi belajar efektif untuk UTBK">📚 Strategi UTBK</button>
+                            <a href="./chat-qna.html" class="suggestion-btn">💻 Belajar Interaktif</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="chat-input-container">
+                <input 
+                    type="text" 
+                    class="chat-input" 
+                    id="chatInput" 
+                    placeholder="Ketik pertanyaanmu di sini..."
+                    autocomplete="off"
+                >
+                <button class="send-btn" id="sendBtn">Kirim</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p><strong>CARIN</strong> - Memberdayakan Siswa Indonesia</p>
+        <p>© 2025 CARIN. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/chat.js"></script>
+</body>
+</html>

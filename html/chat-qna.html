@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARIN - Chat dengan AI Tutor</title>
+    <link rel="stylesheet" href="../css/test-chat-qna.css"> 
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <span class="icon">🎓</span>
+            <span>CARIN</span>
+        </div>
+        <ul class="navbar-menu" id="navbarMenu">
+            <li><a href="dashboard.html">Beranda</a></li>
+            <li><a href="#" class="active">Mulai Belajar</a></li>
+            <li><a href="dashboard.html#featuresSection">Fitur</a></li>
+        </ul>
+        <div class="mobile-toggle" id="mobileToggle">☰</div>
+    </nav>
+
+    <section class="chat-section active" id="chatSection">
+        <div class="chat-container">
+            <div class="chat-header">
+                <div class="avatar">🤖</div>
+                <div class="info">
+                    <h3>CARIN (Rin Tohsaka Mode)</h3>
+                    <p>Siap membantu belajarmu</p>
+                </div>
+            </div>
+            
+            <div class="chat-messages" id="chatMessages">
+                
+                <div class="message ai">
+                    <div class="message-bubble">
+                        <p>Halo! Saya AI Tutor CARIN. 👋</p>
+                        <p>Selamat datang! Saya siap membantumu merencanakan langkah selanjutnya.</p>
+                        <p>Untuk memulai, <b>mari kita susun panduan belajarmu.</b></p>
+                        <p>Pilih topik atau langkah pertama dari proses belajarmu:</p>
+                        
+                        <div class="suggestions">
+                            
+                            <button class="suggestion-btn" data-suggestion="Buatkan peta jalan (roadmap) lengkap untuk menjadi Data Scientist pemula.">
+                                📊 Roadmap Data Scientist
+                            </button>
+                            
+                            <button class="suggestion-btn" data-suggestion="Bagaimana cara menjadi Game Developer? Berikan roadmap belajar C++ dan Unity.">
+                                🎮 Roadmap Game Developer
+                            </button>
+                            
+                            <button class="suggestion-btn" data-suggestion="Susun roadmap untuk menjadi Android Developer menggunakan bahasa Java/Kotlin.">
+                                📱 Roadmap Android Developer
+                            </button>
+                            
+                            <a href="./chat.html" class="suggestion-btn">💻 Panduan Belajar</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="chat-input-container">
+                <input 
+                    type="text" 
+                    class="chat-input" 
+                    id="chatInput" 
+                    placeholder="Ketik pertanyaanmu di sini..."
+                    autocomplete="off"
+                >
+                <button class="send-btn" id="sendBtn">Kirim</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p><strong>CARIN</strong> - Memberdayakan Siswa Indonesia</p>
+        <p>© 2025 CARIN. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/test-chat-qna.js"></script>
+</body>
+</html>

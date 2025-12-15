@@ -1,0 +1,66 @@
+.message.ai p {
+    margin-bottom: 0.6rem;
+}
+
+.message.ai h4 {
+    margin-bottom: 0.5rem;
+    color: var(--primary-blue);
+}
+
+.quiz {
+    margin-top: 10px;
+}
+
+.quiz-question {
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.quiz-options {
+    display: grid;
+    gap: 10px;
+}
+
+.quiz-btn {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background: white;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.quiz-btn:hover {
+    border-color: var(--primary-blue);
+    background: #f5f9ff;
+}
+
+.feedback-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.formula {
+    margin: 12px 0;
+    padding: 10px;
+    background: #f9f9f9;
+    border-left: 4px solid #4caf50;
+    border-radius: 6px;
+}
+
+.typing-indicator {
+    display: flex;
+    gap: 6px;
+}
+
+.typing-indicator span {
+    width: 8px;
+    height: 8px;
+    background: var(--text-light);
+    border-radius: 50%;
+    animation: typingBounce 1.4s infinite;
+}
+
+.typing-indicator span:nth-child(2) { animation-delay: .2s; }
+.typing-indicator span:nth-child(3) { animation-delay: .4s; }
